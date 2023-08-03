@@ -16,7 +16,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/barillamw/WebApp-Portfolio">
+  <a href="https://github.com/barillamw/Project-WorkoutTrackingAPI">
     <img src="./image.png" alt="Logo" height="80">
   </a>
 
@@ -24,14 +24,14 @@
 
   <p align="center">
     <!-- <br />
-    <a href="https://github.com/barillamw/WebApp-Portfolio"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/barillamw/Project-WorkoutTrackingAPI"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/barillamw/WebApp-Portfolio">View Demo</a>
+    <a href="https://github.com/barillamw/Project-WorkoutTrackingAPI">View Demo</a>
     ·
-    <a href="https://github.com/barillamw/WebApp-Portfolio/issues">Report Bug</a>
+    <a href="https://github.com/barillamw/Project-WorkoutTrackingAPI/issues">Report Bug</a>
     ·
-    <a href="https://github.com/barillamw/WebApp-Portfolio/issues">Request Feature</a> -->
+    <a href="https://github.com/barillamw/Project-WorkoutTrackingAPI/issues">Request Feature</a> -->
   </p>
 </div>
 
@@ -155,7 +155,7 @@ Michael Barilla - mbarill@ncsu.edu.com
 
 Begin your fitness journey with the Workout Tracker API, built on Django and hosted on Azure. Log your exercises, manage routines, and harness the power of data to achieve your fitness goals. With a planned Flutter UI on the horizon, accessing and visualizing your workout progress will be more convenient than ever before.
 
-Project Link: [https://github.com/barillamw/WebApp-Portfolio](https://github.com/barillamw/WebApp-Portfolio)
+Project Link: [https://github.com/barillamw/Project-WorkoutTrackingAPI](https://github.com/barillamw/Project-WorkoutTrackingAPI)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -163,16 +163,16 @@ Project Link: [https://github.com/barillamw/WebApp-Portfolio](https://github.com
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/barillamw/WebApp-Portfolio.svg?style=for-the-badge
-[contributors-url]: https://github.com/barillamw/WebApp-Portfolio/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/barillamw/WebApp-Portfolio.svg?style=for-the-badge
-[forks-url]: https://github.com/barillamw/WebApp-Portfolio/network/members
-[stars-shield]: https://img.shields.io/github/stars/barillamw/WebApp-Portfolio.svg?style=for-the-badge
-[stars-url]: https://github.com/barillamw/WebApp-Portfolio/stargazers
-[issues-shield]: https://img.shields.io/github/issues/barillamw/WebApp-Portfolio.svg?style=for-the-badge
-[issues-url]: https://github.com/barillamw/WebApp-Portfolio/issues
-[license-shield]: https://img.shields.io/github/license/barillamw/WebApp-Portfolio.svg?style=for-the-badge
-[license-url]: https://github.com/barillamw/WebApp-Portfolio/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/barillamw/Project-WorkoutTrackingAPI.svg?style=for-the-badge
+[contributors-url]: https://github.com/barillamw/Project-WorkoutTrackingAPI/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/barillamw/Project-WorkoutTrackingAPI.svg?style=for-the-badge
+[forks-url]: https://github.com/barillamw/Project-WorkoutTrackingAPI/network/members
+[stars-shield]: https://img.shields.io/github/stars/barillamw/Project-WorkoutTrackingAPI.svg?style=for-the-badge
+[stars-url]: https://github.com/barillamw/Project-WorkoutTrackingAPI/stargazers
+[issues-shield]: https://img.shields.io/github/issues/barillamw/Project-WorkoutTrackingAPI.svg?style=for-the-badge
+[issues-url]: https://github.com/barillamw/Project-WorkoutTrackingAPI/issues
+[license-shield]: https://img.shields.io/github/license/barillamw/Project-WorkoutTrackingAPI.svg?style=for-the-badge
+[license-url]: https://github.com/barillamw/Project-WorkoutTrackingAPI/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/michael-barilla
 [product-screenshot]: images/screenshot.png
