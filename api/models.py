@@ -43,6 +43,7 @@ class Workout(models.Model):
 class Exercise(models.Model):
     id = models.UUIDField(primary_key=True,default=uuid.uuid4)
     workout = models.ForeignKey(Workout,on_delete=models.CASCADE, editable=False)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, editable=False)
     name = models.TextField(blank=True)
     target = models.TextField(blank=True, choices=MUSCLE_GROUP_CHOICES)
     repGoal = models.TextField(blank=True)
@@ -52,6 +53,7 @@ class Exercise(models.Model):
 class Set(models.Model):
     id = models.UUIDField(primary_key=True,default=uuid.uuid4)
     exercise = models.ForeignKey(Exercise,on_delete=models.CASCADE, editable=False)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, editable=False)
     weight = models.FloatField(default=0.0)
     reps = models.IntegerField(null=True)
     
