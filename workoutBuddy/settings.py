@@ -10,18 +10,25 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
+import os
 from pathlib import Path
+from dotenv import load_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 from datetime import timedelta
 
+load_dotenv()
+
+# Build paths inside the project like this: BASE_DIR / 'subdir'.
+BASE_DIR = Path(__file__).resolve().parent.parent
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-h(k8#+k(b!3ku#$=a4vbktfanqu#^iyv&8nj4u%@l3sne3tkf&'
+SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -44,6 +51,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'rest_framework_simplejwt.token_blacklist',
+
+    'mssql-django'
 ]
 
 MIDDLEWARE = [
@@ -82,6 +91,8 @@ WSGI_APPLICATION = 'workoutBuddy.wsgi.application'
 
 DATABASES = {
     'default': {
+         'NAME': os.getenv("DB_NAME"),
+         'HOST': os.getenv("DB_SERVER"),
          'ENGINE': 'mssql',
          'Trusted_Connection': 'no', 
          'OPTIONS': { 
