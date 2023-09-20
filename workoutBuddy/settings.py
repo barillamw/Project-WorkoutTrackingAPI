@@ -82,9 +82,12 @@ WSGI_APPLICATION = 'workoutBuddy.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+         'ENGINE': 'mssql',
+         'Trusted_Connection': 'no', 
+         'OPTIONS': { 
+             'driver': 'ODBC Driver 17 for SQL Server', 
+             'extra_params': "Authentication=ActiveDirectoryMsi;Encrypt=yes;TrustServerCertificate=no" }
+     }
 }
 
 

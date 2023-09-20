@@ -22,7 +22,7 @@ def getRoutes(request):
 ## Workout Views 
 ########################################################
 class WorkoutView(APIView):
-    permission_classes = (IsAuthenticated,)
+    #permission_classes = (IsAuthenticated,)
     # Endpoint - /workout/
     # Gets all of the workouts that are currently stored
     @api_view(['GET'])

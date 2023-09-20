@@ -7,6 +7,7 @@ db.sqlite3
 media
 
 
+
 # Backup files # 
 *.bak 
 
@@ -138,3 +139,23 @@ GitHub.sublime-settings
 .history
 
 api/migrations
+.DS_Store
+api/__pycache__/__init__.cpython-311.pyc
+api/__pycache__/admin.cpython-311.pyc
+api/__pycache__/apps.cpython-311.pyc
+api/__pycache__/models.cpython-311.pyc
+api/__pycache__/serializers.cpython-311.pyc
+api/__pycache__/urls.cpython-311.pyc
+api/__pycache__/views.cpython-311.pyc
+api/migrations/__pycache__/__init__.cpython-311.pyc
+api/migrations/__pycache__/0001_initial.cpython-311.pyc
+api/migrations/__pycache__/0002_workout_totalweight.cpython-311.pyc
+api/migrations/__pycache__/0003_workout_focus.cpython-311.pyc
+api/migrations/__pycache__/0004_exercise.cpython-311.pyc
+api/migrations/__pycache__/0005_alter_exercise_equipment_set.cpython-311.pyc
+api/migrations/__pycache__/0006_set_reps.cpython-311.pyc
+api/migrations/__pycache__/0007_alter_exercise_workout_alter_set_exercise_and_more.cpython-311.pyc
+workoutBuddy/__pycache__/__init__.cpython-311.pyc
+workoutBuddy/__pycache__/settings.cpython-311.pyc
+workoutBuddy/__pycache__/urls.cpython-311.pyc
+workoutBuddy/__pycache__/wsgi.cpython-311.pyc
