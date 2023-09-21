@@ -99,7 +99,7 @@ DATABASES = {
          'ENGINE': 'mssql',
          'Trusted_Connection': 'no', 
          'OPTIONS': { 
-             'driver': 'ODBC Driver 17 for SQL Server', 
+             'driver': 'ODBC Driver 18 for SQL Server', 
              'extra_params': "Authentication=ActiveDirectoryMsi;Encrypt=yes;TrustServerCertificate=no" }
      }
 }
