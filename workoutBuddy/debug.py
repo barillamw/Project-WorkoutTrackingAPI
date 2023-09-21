@@ -33,9 +33,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['workoutbuddy-api.azurewebsites.net','127.0.0.1']
-CSRF_TRUSTED_ORIGINS = ['https://*.azurewebsites.net']
-CORS_ALLOW_ALL_ORIGINS: True
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -54,11 +52,10 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'rest_framework_simplejwt.token_blacklist',
 
-    'corsheaders',
+    'mssql-django'
 ]
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -93,20 +90,17 @@ WSGI_APPLICATION = 'workoutBuddy.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-
     'default': {
-        'ENGINE': 'mssql',
-        'NAME': os.getenv("DB_NAME"),
-        'HOST': os.getenv("DB_SERVER"),
-        'PORT': '1433',
-        'USER': os.getenv("DB_USER"),
-        'PASSWORD': os.getenv("DB_PASSWORD"),
-        'OPTIONS': {
-	            'driver': 'ODBC Driver 18 for SQL Server',
-	        },
-    }
-
+         'NAME': os.getenv("DB_NAME"),
+         'HOST': os.getenv("DB_SERVER"),
+         'ENGINE': 'mssql',
+         'Trusted_Connection': 'no', 
+         'OPTIONS': { 
+             'driver': 'ODBC Driver 17 for SQL Server', 
+             'extra_params': "Authentication=ActiveDirectoryMsi;Encrypt=yes;TrustServerCertificate=no" }
+     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
